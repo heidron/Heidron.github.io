@@ -9,14 +9,18 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0f172a;color:#f
 header{padding:40px 20px;text-align:center}
 h1{margin:0;font-size:2.6rem}
 h2{margin-top:8px;font-weight:400;color:#a5b4fc}
-section{max-width:700px;margin:30px auto;padding:0 20px;text-align:center}
-.card{background:#020617;border:1px solid #1f2937;border-radius:10px;padding:25px}
-a{color:#a5b4fc;text-decoration:none}
+section{max-width:800px;margin:30px auto;padding:0 20px}
+.card{background:#020617;border:1px solid #1f2937;border-radius:10px;padding:25px;text-align:center}
+a{color:#a5b4fc}
 footer{margin:40px 0;font-size:0.9rem;color:#9ca3af;text-align:center}
-.btn{display:inline-block;margin-top:18px;padding:10px 18px;border:1px solid #4b5563;border-radius:6px}
+nav{margin-top:25px}
+nav a{margin:0 10px;color:#a5b4fc;text-decoration:none}
+h3{margin-top:35px}
+.box{background:#020617;border:1px solid #1f2937;border-radius:10px;padding:18px;margin-top:15px}
 </style>
 </head>
 <body>
+
 <header>
   <h1>Heidron</h1>
   <h2>IT-Services • Support • Infrastruktur</h2>
@@ -24,13 +28,81 @@ footer{margin:40px 0;font-size:0.9rem;color:#9ca3af;text-align:center}
 
 <section>
   <div class="card">
-    <p>Diese Website befindet sich im Aufbau!</p>
+    <p><strong>Diese Website befindet sich im Aufbau.</strong></p>
+    <p>Aktuell handelt es sich um ein Test- und Informationsprojekt. 
+    Es werden derzeit keine entgeltlichen Leistungen angeboten.</p>
     <p>Kontakt: <a href="mailto:info@heidron.de">info@heidron.de</a></p>
   </div>
+
+  <nav>
+    <a href="#impressum">Impressum</a> |
+    <a href="#datenschutz">Datenschutz</a>
+  </nav>
+
+  <!-- IMPRESSUM -->
+  <div id="impressum" class="box">
+    <h3>Impressum</h3>
+
+    <p><strong>Angaben gemäß § 5 TMG</strong></p>
+
+    <p>
+      Heidron – IT Services<br>
+      <strong>Patrick Heidbüchel</strong><br>
+      Auf Überhaaren 25<br>
+      52080 Aachen
+    </p>
+
+    <p>
+      Telefon: 01522&nbsp;6258699<br>
+      E-Mail: <a href="mailto:info@heidron.de">info@heidron.de</a>
+    </p>
+
+    <p>
+      Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:<br>
+      <strong>Patrick Heidbüchel</strong>, Anschrift wie oben.
+    </p>
+
+    <p><em>Hinweis:</em> Dieses Projekt befindet sich im Aufbau. 
+    Es besteht derzeit kein bindendes Angebot für Dienstleistungen.</p>
+  </div>
+
+  <!-- DATENSCHUTZ -->
+  <div id="datenschutz" class="box">
+    <h3>Datenschutzerklärung</h3>
+
+    <p><strong>1. Verantwortlicher</strong><br>
+      Heidron – IT Services<br>
+      E-Mail: info@heidron.de
+    </p>
+
+    <p><strong>2. Server-Logfiles (GitHub Pages)</strong><br>
+      Beim Aufruf dieser Website werden automatisch Daten durch den Hosting-Anbieter (GitHub) verarbeitet 
+      (z. B. IP-Adresse, Datum/Uhrzeit, aufgerufene Seite, Browsertyp).  
+      Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO 
+      aus berechtigtem Interesse an der sicheren Bereitstellung der Website. 
+      Die Daten werden automatisch gelöscht.
+    </p>
+
+    <p><strong>3. Keine Cookies / kein Tracking</strong><br>
+      Auf dieser Website werden derzeit keine Cookies, Analyse- oder Tracking-Dienste eingesetzt.
+    </p>
+
+    <p><strong>4. Rechte der Betroffenen</strong><br>
+      Sie haben das Recht auf Auskunft, Berichtigung, Löschung, 
+      Einschränkung der Verarbeitung sowie Beschwerde bei einer Aufsichtsbehörde.
+    </p>
+
+    <p><strong>5. Kontakt</strong><br>
+      Bei Fragen zum Datenschutz:  
+      <a href="mailto:info@heidron.de">info@heidron.de</a>
+    </p>
+  </div>
+
 </section>
 
 <footer>
-  <div>© Heidron — IT Services</div>
+  © Heidron — IT Services
 </footer>
+
 </body>
 </html>
