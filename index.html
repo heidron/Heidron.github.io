@@ -1,107 +1,111 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Heidron – IT Services</title>
 <style>
-body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#1F1F1F;color:#f1f5f9}
-header{padding:40px 20px;text-align:center}
-h1{margin:0;font-size:2.6rem}
-h2{margin-top:8px;font-weight:400;color:#a5b4fc}
-section{max-width:800px;margin:30px auto;padding:0 20px}
-.card{background:#020617;border:1px solid #1f2937;border-radius:10px;padding:25px;text-align:center}
-a{color:#a5b4fc}
-footer{margin:40px 0;font-size:0.9rem;color:#9ca3af;text-align:center}
-nav{margin-top:25px}
-nav a{margin:0 10px;color:#a5b4fc;text-decoration:none}
-h3{margin-top:35px}
-.box{background:#020617;border:1px solid #1f2937;border-radius:10px;padding:18px;margin-top:15px}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #f1f5f9;
+}
+header {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg,#1e293b,#0f172a);
+}
+h1 { font-size: 42px; margin-bottom: 10px; }
+h2 { color: #38bdf8; }
+section { padding: 60px 20px; max-width: 1000px; margin: auto; }
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px;
+    background: #38bdf8;
+    color: #0f172a;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+.btn-secondary {
+    background: transparent;
+    border: 2px solid #38bdf8;
+    color: #38bdf8;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card {
+    flex: 1 1 280px;
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 8px;
+}
+footer {
+    background: #020617;
+    padding: 40px 20px;
+    font-size: 14px;
+}
+a { color: #38bdf8; text-decoration: none; }
 </style>
 </head>
 <body>
 
 <header>
-  <h1>Heidron - IT Services</h1>
-  <h2>IT-Services • Support • Infrastruktur</h2>
+    <h1>Heidron – IT Services</h1>
+    <p>IT-Services • Support • Infrastruktur</p>
+    <p><strong>Website im Aufbau</strong></p>
+    <a href="mailto:info@heidron.de" class="btn">Kontakt aufnehmen</a>
+    <a href="#leistungen" class="btn btn-secondary">Leistungen ansehen</a>
 </header>
 
+<section id="leistungen">
+    <h2>Leistungsbereiche</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>IT-Support</h3>
+            <p>Remote- und Vor-Ort-Unterstützung für kleine Unternehmen und Selbstständige.</p>
+        </div>
+        <div class="card">
+            <h3>Netzwerkinfrastruktur</h3>
+            <p>Planung und Umsetzung stabiler, sicherer Netzwerke.</p>
+        </div>
+        <div class="card">
+            <h3>Systemoptimierung</h3>
+            <p>Performance-Analyse, Sicherheitsprüfung und Strukturierung.</p>
+        </div>
+    </div>
+</section>
+
 <section>
-  <div class="card">
-    <p><strong>Diese Website befindet sich im Aufbau.</strong></p>
-    <p>Aktuell handelt es sich um ein Test- und Informationsprojekt. 
-    Es werden derzeit keine entgeltlichen Leistungen angeboten.</p>
-    <p>Kontakt: <a href="mailto:info@heidron.de">info@heidron.de</a></p>
-  </div>
-
-  <nav>
-    <a href="#impressum">Impressum</a> |
-    <a href="#datenschutz">Datenschutz</a>
-  </nav>
-
-  <!-- IMPRESSUM -->
-  <div id="impressum" class="box">
-    <h3>Impressum</h3>
-
-    <p><strong>Angaben gemäß § 5 TMG</strong></p>
-
-    <p>
-      Heidron – IT Services<br>
-      <strong>Patrick H.</strong><br>
-      Strasse Nr<br>
-      PLZ Stadt
-    </p>
-
-    <p>
-      Telefon: 01522&nbsp;1234567<br>
-      E-Mail: <a href="mailto:info@heidron.de">info@heidron.de</a>
-    </p>
-
-    <p>
-      Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:<br>
-      <strong>Patrick H.</strong>, Anschrift wie oben.
-    </p>
-
-    <p><em>Hinweis:</em> Dieses Projekt befindet sich im Aufbau. 
-    Es besteht derzeit kein bindendes Angebot für Dienstleistungen.</p>
-  </div>
-
-  <!-- DATENSCHUTZ -->
-  <div id="datenschutz" class="box">
-    <h3>Datenschutzerklärung</h3>
-
-    <p><strong>1. Verantwortlicher</strong><br>
-      Heidron – IT Services<br>
-      E-Mail: info@heidron.de
-    </p>
-
-    <p><strong>2. Server-Logfiles (GitHub Pages)</strong><br>
-      Beim Aufruf dieser Website werden automatisch Daten durch den Hosting-Anbieter (GitHub) verarbeitet 
-      (z. B. IP-Adresse, Datum/Uhrzeit, aufgerufene Seite, Browsertyp).  
-      Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO 
-      aus berechtigtem Interesse an der sicheren Bereitstellung der Website. 
-      Die Daten werden automatisch gelöscht.
-    </p>
-
-    <p><strong>3. Keine Cookies / kein Tracking</strong><br>
-      Auf dieser Website werden derzeit keine Cookies, Analyse- oder Tracking-Dienste eingesetzt.
-    </p>
-
-    <p><strong>4. Rechte der Betroffenen</strong><br>
-      Sie haben das Recht auf Auskunft, Berichtigung, Löschung, 
-      Einschränkung der Verarbeitung sowie Beschwerde bei einer Aufsichtsbehörde.
-    </p>
-
-    <p><strong>5. Kontakt</strong><br>
-      Bei Fragen zum Datenschutz:  
-      <a href="mailto:info@heidron.de">info@heidron.de</a>
-    </p>
-  </div>
-
+    <h2>Projektstatus</h2>
+    <p>Dieses Projekt befindet sich aktuell im Aufbau. Derzeit werden keine entgeltlichen Leistungen angeboten.</p>
 </section>
 
 <footer>
-  © Heidron — IT Services
+    <p><strong>Impressum</strong></p>
+    <p>Angaben gemäß § 5 TMG<br>
+    Heidron – IT Services<br>
+    Patrick H.<br>
+    Straße Nr<br>
+    PLZ Stadt<br>
+    Telefon: 01522 1234567<br>
+    E-Mail: info@heidron.de</p>
+
+    <p>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:<br>
+    Patrick H., Anschrift wie oben.</p>
+
+    <hr>
+
+    <p><strong>Datenschutzerklärung</strong></p>
+    <p>Beim Aufruf dieser Website werden automatisch Daten durch den Hosting-Anbieter (GitHub Pages) verarbeitet (z. B. IP-Adresse, Datum/Uhrzeit, Browsertyp). Die Verarbeitung erfolgt gemäß Art. 6 Abs. 1 lit. f DSGVO aus berechtigtem Interesse an der sicheren Bereitstellung der Website.</p>
+    <p>Es werden keine Cookies oder Tracking-Dienste eingesetzt.</p>
+
+    <p>© 2026 Heidron – IT Services</p>
 </footer>
 
 </body>
